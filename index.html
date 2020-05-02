@@ -9,7 +9,15 @@
         <a-asset-item id="aries2" src="model/aries2.glb"></a-asset-item>
       </a-assets>
       <a-marker preset="hiro">
-        <a-gltf-model src="#aries2"></a-gltf-model>
+        <a-gltf-model src="#aries2">
+          <a-animation
+            attribute="rotation"
+            dur="3000"
+            to="0 0 360"
+            repeat="indefinite"
+            easing="linear"
+          ></a-animation>
+        </a-gltf-model>
       </a-marker>
 
       <a-entity camera></a-entity>
